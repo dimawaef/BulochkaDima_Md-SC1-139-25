@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h3>Форма заявки на работу в зооапрк</h3>
+        <p><i>пожалуйста, заполните фориу. Обезательные поля помечены <font color="red"><sup >*</sup></font></i></p>
+        <form action="http://fe.it-academy.by/TestForm.php">
+            <fieldset>
+                <legend>Контактная информация</legend>
+               <table border="0">
+                <tr>
+                    <td><label for="neme">Имя <font color="red"><sup>*</sup></font></label></td>
+                    <td><input id="neme" type="text" name="user-name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tell">Телефон</label></td>
+                    <td><input  id="tell" type="tel" name="user-phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email<font color="red"><sup>*</sup></font></label></td>
+                    <td><input id="mail" type="email" required></td>
+                </tr>
+               </table>
+            </fieldset>
+            <fieldset>
+                <legend>Персональныя информация</legend>
+                <table border="0">
+                    <tr>
+                        <td><label for="old" id="old">Возрост<font color="red"><sup>*</sup></font></label></td>
+                        <td><input  type="number" name="old" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pol">Пол</label></td>
+                        <td><select name="select"  size="1" >
+                            <option value="sel1">Мужчина</option>
+                            <option value="sel2">Женщина</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><Label for="k">перечислите<br> личные<br> качества</Label></td>
+                        <td><textarea name="date" ></textarea></td>
+                    </tr>
+                    </table>
+                    
+
+            </fieldset>
+            <fieldset>
+            <legend>Выбирете ваших любимых животных</legend>
+            <tr>
+                <td><input type="checkbox" name="anumal 8">Зебра</td>
+                <td><input type="checkbox" name="anumal 1" >кошак</td>
+                <td><input type="checkbox" name="anumal 2">Анвконда</td>
+                <td> <input type="checkbox"name="anumal 3">Человек</td>
+            </tr><br>
+            <tr>
+                <td><input type="checkbox" name="anumal 4">слон</td>
+                <td><input type="checkbox" name="anumal 5" >Антилопа</td>
+                <td><input type="checkbox" name="anumal 6">голубь</td>
+                <td><input type="checkbox" name="anumal 7">Краб</td>
+            </tr>
+            </fieldset>
+            <input type="submit">
+            
+        </form>
+
+    </body>
+
+</html>
