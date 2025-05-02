@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Заполните анкету</h1>
+    </div>
+    <table width="100%">
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Личные данные</legend>
+                        <table>
+                            <tr>
+                                <td><input type="text" pattern="[А-Яа-яЁё\s]+" placeholder="Фамилия" maxlength="25"
+                                        required autofocus id="neme" name="name">
+                            </tr>
+                            <tr>
+                                <td><input type="text" pattern="[А-Яа-яЁё\s]+" placeholder="Имя" maxlength="20" required
+                                        id="famili" name="famili">
+                            <tr>
+                                <td><input type="text" pattern="[А-Яа-яЁё\s]+" placeholder="Отчество " maxlength="24"
+                                        required id="otr" name="otr">
+
+                        </table>
+                        <fieldset>
+                            <legend>Паспортные данные</legend>
+                            <table>
+
+                                <tr>
+                                    <td><input type="text" name="seria" id="seria" maxlength="2" pattern="[A-Z]{2}"
+                                            placeholder="AA">
+                                        <input type="text" name="pasport" id="pasport" pattern="\d{7}" maxlength="7"
+                                            required placeholder="1234567">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Дата рождения </legend>
+                            <table>
+                                <tr>
+                                    <td><input type="text" name="god" id="god" maxlength="4" pattern="[0-9]{4}"
+                                            placeholder="2000"></td>
+
+                                </tr>
+                                <tr>
+                                    <td><select name="monht" id="monht">
+                                            <option value="1">Январь</option>
+                                            <option value="2">Февраль</option>
+                                            <option value="3">Март</option>
+                                            <option value="4">Апрель</option>
+                                            <option value="5">Май</option>
+                                            <option value="6">Июнь </option>
+                                            <option value="7">Июль</option>
+                                            <option value="8">Август</option>
+                                            <option value="9">Сентябрь</option>
+                                            <option value="10">Октябрь</option>
+                                            <option value="11">Ноябрь</option>
+                                            <option value="12">Декабрь</option>
+                                        </select></td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="number" name="number" id="number" man="1" max="31"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="RB" id="RB" required>
+                                        <option value="1_1">РБ</option>
+                                        <option value="2_2">РФ</option>                                        
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Адрес:</td>
+                            </tr>
+                            <tr>
+                                <td><textarea name="adres" id="adres"></textarea></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Интересы</legend>
+                        <fieldset>
+                            <legend>Хобби</legend>
+                            <table>
+                                <tr>
+                                    <td><input type="checkbox" name="fish" id="fish"></td>
+                                    <td><label for="">Рыбалка</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="cosmos" id="cosmos"></td>
+                                    <td> <label for="cosmos">Астрономия</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="Diving" id="Diving"></td>
+                                    <td><label for="Diving">дайвинг</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="marki" id="marki"></td>
+                                    <td><label for="marki">Марки</label></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
