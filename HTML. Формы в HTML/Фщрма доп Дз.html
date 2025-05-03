@@ -13,7 +13,7 @@
     <table width="100%">
         <tr>
             <td>
-                <form action="">
+                <form action="http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Личные данные</legend>
                         <table>
@@ -109,6 +109,89 @@
                                 <tr>
                                     <td><input type="checkbox" name="marki" id="marki"></td>
                                     <td><label for="marki">Марки</label></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <select name="hous_animal" id="hous_animal">
+                                        <optgroup label="Попугаи">
+                                            <option value="anmal1">Волнистый</option>
+                                            <option value="anmal2">Apa</option>
+                                            <option value="anmal3   ">Неразлучник</option>
+                                        </optgroup>
+                                        <optgroup label="Рыба">
+                                            <option value="anmal1_1">Караси </option>
+                                            <option value="anmal1_2">Караси </option>
+                                            <option value="anmal1_3">Осётр</option>
+                                        </optgroup>
+                                        <optgroup label="Птицы">
+                                            <option value="anmal1_1_1">Стая ворон </option>
+                                            <option value="anmal1_1_2">Аист </option>
+                                            <option value="anmal1_1_3">Археоптерикс</option>
+                                        </optgroup>
+                                    </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Данные для входа и восстановления пароля</legend>
+                            <table>
+                                <tr>
+                                    <td><input type="password" pattern="[A-Za-z]{10,}" name="login" id="login"
+                                         title="Только латинские буквы, без пробелов, минимум 5 символов"
+                                         required placeholder="Логин" maxlength="20">
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" pattern="[A-Za-z]{5,}" name="parol" id="parol"
+                                        title="Только латинские буквы, без пробелов, минимум 5 символов"
+                                        required placeholder="Пароль" maxlength="20" autocomplete="off">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Координаты:</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="email" name="email" id="email" placeholder="введите адрес почты">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="url" name="url" id="url" placeholder="введите адрес сайта" >
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Цифры</legend>
+                            <table>
+                                <tr>
+                                    <td><input type="number" name="num1" id="num1" min="-2.5" max="2.5" step="0.1"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="range" name="polzunoc" id="polzunoc" max="10" min="1"> </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Кнопки управления</legend>
+                            <table>
+                                <tr>
+                                    <td><input type="submit" value="Отправить"></td>
+                                    <td><input type="reset" value="Сбросить"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <input type="image" src="email.jpg"></td>
                                 </tr>
                             </table>
                         </fieldset>
