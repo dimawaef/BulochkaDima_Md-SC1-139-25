@@ -1,0 +1,67 @@
+div {
+    border: #222222 1px solid;
+    border-radius: 5px;
+}
+
+.Schedule {
+    display: none;
+    width: 130px;
+    color: white;
+
+}
+
+.week {
+    float: left;
+    flex-direction: row;
+    width: 130px;
+    color: antiquewhite;
+    background-color: #BF360C;
+}
+
+.week:hover .Schedule {
+    display: block;
+}
+
+.Schedule>div {
+    background-color: #6e6b3c;
+}
+
+.week>* {
+    all: unset;
+}
+
+@media all and (max-width: 400px) {
+    div {
+        border: #222222 1px solid;
+        border-radius: 5px;
+    }
+
+    .Schedule {
+        display: none;
+        width: 130px;
+        color: white;
+
+    }
+
+    .week {
+        float: none;
+        flex-direction: row;
+        width: 130px;
+        color: antiquewhite;
+        background-color: #BF360C;
+    }
+
+    .week:hover .Schedule {
+        display: block;
+        position: absolute;
+    }
+
+    .Schedule>div {
+        background-color: #6e6b3c;
+    }
+
+    .week>* {
+        all: unset;
+    }
+
+}
