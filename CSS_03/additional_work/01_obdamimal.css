@@ -1,0 +1,63 @@
+
+div {
+    border-radius: 5px;
+}
+
+.Schedule {
+    border: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;    
+    transition: max-height 0.5s ease, opacity 0.5s ease;    
+    width: 130px;
+    color: white;
+    background-color: #6e6b3c;
+}
+
+.week {
+    border: 1px solid black;
+    transition: background-color 0.3s ease;    
+    float: left;
+    flex-direction: row;
+    width: 133px;
+    color: antiquewhite;
+    background-color: #BF360C;
+    position: relative;    
+    cursor: pointer;
+}
+
+.week:hover {
+    background-color: #A33D0C;
+} 
+
+.week:hover .Schedule {
+    max-height: 200px;
+    
+    opacity: 1;
+    
+}
+
+.Schedule>div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #444;
+}
+
+.Schedule>div:last-child {
+    border-bottom: none;
+}
+
+
+@media all and (max-width: 500px) {
+    .Schedule {
+        left: 100%;
+        top: 0;
+    }
+
+    .week {
+        width: 130px;
+    }
+
+    .week:hover {
+        height: 25px;
+    }
+}
