@@ -1,0 +1,73 @@
+#word[href="#"]::after{
+    display: none;
+    content: url(word.jfif);
+
+}
+#PDF[href="#"]::after{
+    display: none;
+    content: url(pdf.png);
+    
+}
+#ZIP[href="#"]::after{
+    display: none;
+    content: url(zip.gif);
+
+}
+
+
+#word[href="#"]::before{
+    content: url(pusto.jfif);
+    
+}
+#PDF[href="#"]::before{
+    content: url(pusto.jfif);
+    
+}
+#ZIP[href="#"]::before{
+    content: url(pusto.jfif);
+    
+}
+
+
+
+#word:hover[href="#"]::after{
+    display: inline;
+    content: url(word.jfif);
+    
+}
+#PDF:hover[href="#"]::after{
+    display: inline;
+    content: url(pdf.png);
+    
+}
+#ZIP:hover[href="#"]::after{
+    display: inline;
+    content: url(zip.gif);
+    }
+
+    .strelca[href="#"]::before{
+        display: inline;
+        content: url(strelca.png);
+        }
+#word_1[href=""]::after{
+    content: url(word.jfif);
+}
+#PDF_1[href="#"]::after{
+    content: url(pdf.png);
+}
+#ZIP_1[href="#"]::after{
+    content: url(zip.gif);
+}
+div{
+    border: gray solid 0.1px;
+    border-radius: 0 20px 0px 20px;
+}
+.otstyp{
+    text-indent: 20px;
+}
+li::marker{
+    content: none;
+}
+ul{
+    padding: 0;
+    margin-left: 20px;}

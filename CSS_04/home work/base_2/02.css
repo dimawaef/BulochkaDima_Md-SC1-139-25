@@ -16,10 +16,15 @@ tr:nth-child(odd){
 tr:hover{
     background-color: yellow;
 }
-td{
-    border:dotted ;
-}
-th{
-    border;
-}
 
+td:nth-child(even){
+    border-right: dotted black 2px;
+    border-bottom: black dotted 2px;
+    border-left: black dotted 2px;
+}
+td:nth-child(odd){
+    border-bottom: dotted black 2px;
+}
+td:last-child{
+    border-right: none;
+}

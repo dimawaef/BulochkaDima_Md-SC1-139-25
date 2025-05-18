@@ -1,0 +1,21 @@
+.cell{
+    display: flex;
+    border: solid;
+    width: 40px;
+    height: 40px;
+}
+.row{
+display: flex;
+flex-direction: row;
+}
+.cell:nth-child(odd){
+    background-color: black;
+}
+.row:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+#vse{
+    position: absolute;
+}
+
