@@ -1,0 +1,25 @@
+#zagolovoc{
+    background-color: cadetblue;
+    
+}
+#datte{
+    border: none;
+    background-color: white;
+    text-align: center;
+}
+td:nth-child(1){
+    font-weight: bold   ;
+}
+tr:nth-child(odd){
+    background-color: aqua;
+}
+tr:hover{
+    background-color: yellow;
+}
+td{
+    border:dotted ;
+}
+th{
+    border;
+}
+
