@@ -1,33 +1,36 @@
-.cell{
-    display: flex;
+#vse{
     border: solid;
+    width: 320px;
+    counter-reset: num 65;
+}
+.cell{ 
+    display: flex;
     width: 40px;
     height: 40px;
+    counter-increment: num -1;
     justify-content: center;
     align-items: center;
-    counter-increment: number;
+}
+
+.row_1 .cell:nth-child(odd){
+    display: flex;
+    background-color: black;
+    color:white;
+}
+
+.row_2 .cell:nth-child(even){
+display: flex;
+background-color: black;
+color: white;
 }
 .row_1{
-display: flex;
-flex-direction: row;
-counter-reset:number;
-}
-.cell:nth-child(odd){
-    background-color: black;
-}
-.row:nth-child(even){
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
-#vse{
-    position: absolute;
-}
-.row{
-    counter-reset:number;
-}
-.cell{
-    counter-increment: number;
+.row_2{
+    display: flex;
+    flex-direction: row;
 }
 .cell::before{
-    content: counter(number);
+    content: counter(num);
 }
