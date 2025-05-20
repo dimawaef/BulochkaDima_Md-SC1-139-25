@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation Starter Template</title>
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation-float.min.css"
+        crossorigin="anonymous">
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation-prototype.min.css"
+        crossorigin="anonymous">
+
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation-rtl.min.css"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="vse">
+        <div class="grid-x">
+            <div class="cell">
+                <h1>HOW-TO: Программа на Python, Часть 1</h1>
+            </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+            <div class="cell medium-6 large-4">
+                <ul>
+                    <ul>
+                        <li>Программа на Python — часть 1</li>
+                        <li>Программа на Python — часть 2</li>
+                        <li>Программа на Python — часть 3</li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="cell medium-6 large-8">
+                <h3>HOW-TO: Программа на Python, Часть 1</h3>
+            </div>
+        </div>
+
+        <div class="grid-x grid-margin-x">
+            <div class="cell medium-6 large-4">
+                <h3>Содержание</h3>
+                <ul>
+                    <ul>
+                        <li><u>Наша первая программа</u></li>
+                        <li><u> Пример цикла For</u></li>
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="cell medium-6 large-8">
+                Из множества существующих языков программирования Python — один из самых лёгких
+                в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+                Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+                обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+                создание консольных приложений, а в следующей — программирование графических
+                интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.</p>
+            </div>
+        </div>
+
+        <div class="grid-x grid-margin-x">
+            <div class="cell medium-6 large-4">
+            <h3>Наша первая программа</h3>
+            <u>К содержанию</u>
+            </div>
+            <div class="cell medium-6 large-8">
+                <p>Из множества существующих языков программирования Python — один из самых лёгких <br>
+            в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. <br>
+            Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не <br>
+            обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим <br>
+            создание консольных приложений, а в следующей — программирование графических <br>
+            интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.</p>
+    <h2>Наша первая программа</h2>
+    <p>Наберём код в текстовом редакторе (например, в <b>gedit</b> ). Потом мы разберёмся, что делает <br>
+        каждая строка и пойдём дальше.</p>
+        <code>#!/usr/bin/env python <br>
+            print 'Hello. I am a python program.' <br>
+            name = raw_input("What is your name?") <br>
+            print "Hello there, " + name + "!"
+        </code>
+        <p>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке <br>
+             <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать <br>
+            программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для <br>
+            этого введите в терминале</p>
+            <p><u><b><code>chmod +x hello.py</code></b></u></p>
+            <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+            <code>greg@earth:~/python_examples$ ./hello.py <br>
+                Hello. I am a python program. <br>
+                What is your name? Ferd Burphel <br>
+                Hello there, Ferd Burphel!  <br>
+                greg@earth:~/python_examples$</code>
+                <p>Вот и всё. </p>
+            </div>
+        </div>
+
+        <div class="grid-x grid-margin-x">
+            <div class="cell medium-6 large-4">
+                <h2>Пример цикла For</h2>
+                <u>К содержанию</u>
+            </div>
+            <div class="cell medium-6 large-8"><p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый <br>
+                    редактор и наберите следующую программу:</p>
+                    <code>#!/usr/bin/env python <br>
+                        for cntr in range(0,10): <br>
+                         print cntr
+            </code>
+            <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr»</i>. Это важно. В <br>
+                Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки <br>
+                как в других языках программирования, а отступы.</p></div>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+
+</body>
+
+</html>
