@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01.css">
+</head>
+
+<body>
+    <table>
+
+        <tr id="zagolovoc">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr class="points">
+            <td class="points_1">Иванов Иван Иванович</td>
+            <td class="points_1">М</td>
+            <td class="points_1">Начальник</td>
+            <td class="points_1">01.01.1960</td>
+            <td class="points_1">4567</td>
+            <td class="points_1">3453</td>
+        </tr>
+        <tr class="points">
+            <td class="points_2">Петрова Илонна Петровна</td>
+            <td class="points_2">Ж</td>
+            <td class="points_2">секретарь</td>
+            <td class="points_2">01.01.1989</td>
+            <td class="points_2">98795</td>
+            <td class="points_2">46523</td>
+        </tr>
+        <tr class="points">
+            <td class="points_3">Сидоров Илья Игоревич</td>
+            <td class="points_3">М</td>
+            <td class="points_3">бухгалтер</td>
+            <td class="points_3">01.01.1979</td>
+            <td class="points_3">743434</td>
+            <td class="points_3">987979</td>
+        </tr>
+        <tr class="points">
+            <td class="points_4">Пупин Фёдор Фёдорович</td>
+            <td class="points_4">М</td>
+            <td class="points_4">водитель</td>
+            <td class="points_4">01.01.1963</td>
+            <td class="points_4">74323434</td>
+            <td class="points_4">9232379</td>
+        </tr>
+        <tr class="points">
+            <td class="points_5">Крупин Сергей Иванович</td>
+            <td class="points_5">М</td>
+            <td class="points_5">водитель 2</td>
+            <td class="points_5">01.01.1983</td>
+            <td class="points_5">3234534</td>
+            <td class="points_5">923123379</td>
+        </tr>
+        
+        </table>
+        <div class="datte">ДАННЫЕ О СОТРУДНИКАХ</div>
+            
+        <button id="button"  >
+                Показать все строки
+        </button>
+            
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(".points_5").click(function(){
+                $(".points_5").fadeOut()  
+            })
+            $(".points_4").click(function(){
+                $(".points_4").fadeOut()  
+            })
+            $(".points_3").click(function(){
+                $(".points_3").fadeOut()  
+            })
+            $(".points_2").click(function(){
+                $(".points_2").fadeOut()  
+            })
+            $(".points_1").click(function(){
+                $(".points_1").fadeOut()  
+            })
+            
+        </script>
+        <script>
+            $("#button").click(function(){
+                $(".points_5,.points_4,.points_3,.points_2,.points_1").fadeIn()
+            })
+        </script>
+
+</body>
+
+</html>

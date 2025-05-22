@@ -1,0 +1,36 @@
+th {
+    background-color: #747572;
+    color: white;
+}
+
+table {
+    border-top: dotted;
+    border-left: dotted;
+    border-right: dotted;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(odd) {
+    background-color: #CBC0C2;
+}
+
+.points {
+    border: solid black 1px;
+}
+td{
+    font-weight:  bold;
+    padding: 1px;
+    border: black 1px solid;
+}
+.datte{
+    width: 100%;
+    text-align: center;
+}
+#button{
+    background-color: #1362EC;
+    color: white;
+    height: 2.5em;
+    width: 12em;
+    font-size: 18px;
+}
