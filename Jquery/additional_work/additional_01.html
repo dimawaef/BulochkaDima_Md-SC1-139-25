@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* CSS для красного и зелёного фона */
         .error {
-            background-color: red; /* Красный фон */
+            background-color: red;
         }
 
         .success {
-            background-color: green; /* Зелёный фон */
+            background-color: green;
         }
     </style>
 </head>
@@ -35,27 +34,27 @@
 
     <script>
         $(document).ready(function () {
-            
-            function checkPasswords() {
-                const password = $('#password').val(); 
-                const passwordRepeat = $('#password_repeat').val(); 
 
-                
+            function checkPasswords() {
+                const password = $('#password').val();
+                const passwordRepeat = $('#password_repeat').val();
+
+
                 if (password === '' && passwordRepeat === '') {
                     $('#password, #password_repeat').removeClass('error success');
                     return;
                 }
 
-                
+
                 if (password === passwordRepeat) {
                     $('#password, #password_repeat').removeClass('error').addClass('success');
                 } else {
-                    
+
                     $('#password, #password_repeat').removeClass('success').addClass('error');
                 }
             }
 
-            
+
             $('#password, #password_repeat').on('input', function () {
                 checkPasswords();
             });
